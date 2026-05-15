@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Studies | Hazem Elbatawy</title>
+    <meta
+      name="description"
+      content="Redacted security case studies: private program access-control finding and recon/fuzz workflow."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+
+    <header class="topbar reveal" data-delay="0">
+      <div class="brand">Hazem Elbatawy</div>
+      <a class="top-cta" href="index.html">Back To Main Page</a>
+    </header>
+
+    <main>
+      <section class="hero section reveal" data-delay="60">
+        <p class="eyebrow">Redacted Technical Writeups</p>
+        <h1>Case Studies</h1>
+        <p class="lead">
+          This page contains sanitized summaries only. Sensitive data, endpoints,
+          identifiers, and private report artifacts are intentionally redacted.
+        </p>
+      </section>
+
+      <section class="section reveal" data-delay="120">
+        <h2>Case Study 1: Private Program Access-Control Finding (Duplicate)</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Context</h3>
+            <p>
+              Private bug bounty program (authorized testing). Category:
+              access-control weakness.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Method</h3>
+            <p>
+              Validated object-level authorization boundaries across two controlled
+              accounts and confirmed unauthorized cross-account state-change behavior.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Impact</h3>
+            <p>
+              Unauthorized state-change risk on another user-owned object
+              (horizontal privilege escalation pattern).
+            </p>
+          </article>
+          <article class="card">
+            <h3>Outcome</h3>
+            <p>
+              Report submitted with reproducible evidence and remediation guidance.
+              Triage outcome: duplicate.
+            </p>
+          </article>
+        </div>
+        <ul class="process" style="margin-top: 14px">
+          <li>Strength shown: reproducibility discipline and clean evidence packaging</li>
+          <li>Strength shown: clear authorization-risk framing</li>
+          <li>Strength shown: responsible disclosure process quality</li>
+        </ul>
+      </section>
+
+      <section class="section reveal" data-delay="180">
+        <h2>Case Study 2: Redacted Recon and Fuzz Workflow</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Recon Phase</h3>
+            <p>
+              Passive discovery, DNS and certificate transparency checks, endpoint
+              mapping, and response fingerprinting.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Fuzz Phase</h3>
+            <p>
+              Guided parameter and path mutation with controlled request patterns
+              and anomaly triage for reproducible validation.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Tooling</h3>
+            <p>
+              Python-based recon and orchestration scripts with browser-assisted fuzz
+              support for scoped, authorized assessments.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Output</h3>
+            <p>
+              Evidence bundles with reproducible steps, impact notes, and
+              remediation-first recommendations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact reveal" data-delay="240">
+        <h2>Disclosure Policy</h2>
+        <p>
+          Full proof materials are shared only with authorized reviewers, maintainers,
+          or clients under the applicable disclosure and scope policies.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer reveal" data-delay="280">
+      <p>© <span id="year"></span> Hazem Elbatawy. Authorized testing only.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
